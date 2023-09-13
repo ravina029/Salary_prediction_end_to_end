@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Prediction</title>
+  
+</head>
+<body>
+  <div class="login">
+      <h1>Salary Prediction</h1>
+      <form method="POST" action="{{url_for('predict')}}">
+        <input type="number" name="Age" placeholder="Age" required="required" />
+
+        <input type="number" name="Gender" placeholder="Gender"/>
+
+        <input type="number" name="Education_Level" placeholder='Education_Level' />
+        
+        <input type="number" name="Job_Title" placeholder="Job_Title"/>
+        
+        <input type="number" name="Years_of_Experience" placeholder="Years_of_Experience">
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   <br>
+   <br>
+   
+   
+  </div> 
+
+   
+</body>
+</html>
